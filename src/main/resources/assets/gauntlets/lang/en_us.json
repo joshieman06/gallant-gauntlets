@@ -1,0 +1,12 @@
+{
+  "item.gauntlets.iron_gauntlet": "Iron Gauntlet",
+  "item.gauntlets.gold_gauntlet": "Gold Gauntlet",
+  "item.gauntlets.diamond_gauntlet": "Diamond Gauntlet",
+  "item.gauntlets.netherite_gauntlet": "Netherite Gauntlet",
+  "itemgroup.gauntlets": "Gauntlets",
+  "enchantment.gauntlets.crushing": "Crushing",
+  "enchantment.gauntlets.crushing.description": "Crushes opponents armor, destroying it much quicker",
+  "enchantment.gauntlets.poison_fist": "Poison Fist",
+  "enchantment.gauntlets.poison_fist.description": "Poisons enemies who are punched",
+  "tag.item.gauntlets.gauntlets": "Gauntlets"
+}

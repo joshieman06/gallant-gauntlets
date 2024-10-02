@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "gauntlets",
+	"version": "${version}",
+	"name": "Gauntlets",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "ARR",
+	"icon": "assets/gauntlets/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"joshie.gauntlets.Gauntlets"
+		],
+		"client": [
+			"joshie.gauntlets.GauntletsClient"
+		]
+	},
+	"mixins": [
+		"gauntlets.mixins.json",
+		{
+			"config": "gauntlets.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

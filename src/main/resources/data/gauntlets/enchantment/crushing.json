@@ -1,0 +1,48 @@
+{
+  "description": "Crushing",
+  "exclusive_set": [
+    "gauntlets:poison_fist"
+  ],
+  "supported_items": [
+    "gauntlets:iron_gauntlet",
+    "gauntlets:gold_gauntlet",
+    "gauntlets:netherite_gauntlet",
+    "gauntlets:diamond_gauntlet"
+  ],
+  "primary_items": [
+    "gauntlets:iron_gauntlet",
+    "gauntlets:gold_gauntlet",
+    "gauntlets:netherite_gauntlet",
+    "gauntlets:diamond_gauntlet"
+  ],
+  "weight": 5,
+  "max_level": 3,
+  "min_cost": {
+    "base": 8,
+    "per_level_above_first": 8
+  },
+  "max_cost": {
+    "base": 55,
+    "per_level_above_first": 8
+  },
+  "anvil_cost": 3,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "gauntlets:crushing_effect",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 3,
+            "per_level_above_first": 2
+          }
+        }
+      }
+    ]
+  }
+}

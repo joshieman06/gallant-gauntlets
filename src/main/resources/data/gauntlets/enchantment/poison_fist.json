@@ -1,0 +1,49 @@
+{
+  "description": "Poison Fist",
+  "exclusive_set": [
+    "gauntlets:crushing"
+  ],
+  "supported_items": [
+    "gauntlets:iron_gauntlet",
+    "gauntlets:gold_gauntlet",
+    "gauntlets:netherite_gauntlet",
+    "gauntlets:diamond_gauntlet"
+  ],
+  "primary_items": [
+    "gauntlets:iron_gauntlet",
+    "gauntlets:gold_gauntlet",
+    "gauntlets:netherite_gauntlet",
+    "gauntlets:diamond_gauntlet"
+  ],
+  "weight": 3,
+  "max_level": 1,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 8
+  },
+  "max_cost": {
+    "base": 45,
+    "per_level_above_first": 6
+  },
+  "anvil_cost": 5,
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:poison",
+          "min_duration": 100,
+          "max_duration": 200,
+          "min_amplifier": 1,
+          "max_amplifier": 2
+        }
+      }
+    ]
+  }
+}

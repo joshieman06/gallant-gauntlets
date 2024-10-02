@@ -1,0 +1,46 @@
+{
+  "anvil_cost": 2,
+  "description": "Impact",
+  "effects": {
+    "minecraft:knockback": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 1.0,
+            "per_level_above_first": 1.0
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 55,
+    "per_level_above_first": 20
+  },
+  "max_level": 2,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 20
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "exclusive_set": [
+    "gauntlets:uppercut"
+  ],
+  "supported_items": [
+    "gauntlets:iron_gauntlet",
+    "gauntlets:gold_gauntlet",
+    "gauntlets:netherite_gauntlet",
+    "gauntlets:diamond_gauntlet"
+  ],
+  "primary_items": [
+    "gauntlets:iron_gauntlet",
+    "gauntlets:gold_gauntlet",
+    "gauntlets:netherite_gauntlet",
+    "gauntlets:diamond_gauntlet"
+  ],
+  "weight": 5
+}

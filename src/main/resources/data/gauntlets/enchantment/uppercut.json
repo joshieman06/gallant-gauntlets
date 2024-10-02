@@ -1,0 +1,48 @@
+{
+  "description": "Uppercut",
+  "exclusive_set": [
+    "gauntlets:impact"
+  ],
+  "supported_items": [
+    "gauntlets:iron_gauntlet",
+    "gauntlets:gold_gauntlet",
+    "gauntlets:netherite_gauntlet",
+    "gauntlets:diamond_gauntlet"
+  ],
+  "primary_items": [
+    "gauntlets:iron_gauntlet",
+    "gauntlets:gold_gauntlet",
+    "gauntlets:netherite_gauntlet",
+    "gauntlets:diamond_gauntlet"
+  ],
+  "weight": 3,
+  "max_level": 2,
+  "min_cost": {
+    "base": 8,
+    "per_level_above_first": 8
+  },
+  "max_cost": {
+    "base": 55,
+    "per_level_above_first": 8
+  },
+  "anvil_cost": 3,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "gauntlets:uppercut_effect",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 1
+          }
+        }
+      }
+    ]
+  }
+}
