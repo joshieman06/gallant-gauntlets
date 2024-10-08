@@ -27,7 +27,21 @@ loom {
 			sourceSet sourceSets.client
 		}
 	}
-
+	runs {
+		client {
+			client()
+			setConfigName("Fabric Client")
+			ideConfigGenerated(true)
+			programArgs('--username', 'Dev')
+			runDir("runs/client")
+		}
+		server {
+			server()
+			setConfigName("Fabric Server")
+			ideConfigGenerated(true)
+			runDir("runs/server")
+		}
+	}
 }
 
 dependencies {

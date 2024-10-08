@@ -188,7 +188,10 @@ public class GauntletOffhandAttack {
                 }
                 playerEntity.onAttacking(target);
                 if (target instanceof LivingEntity && !(target instanceof EnderDragonEntity)) {
-                    EnchantmentHelper.onTargetDamaged(playerEntity.getServer().getWorld(playerEntity.getWorld().getRegistryKey()), (LivingEntity) target, target.getDamageSources().playerAttack(playerEntity), playerEntity.getOffHandStack());
+
+                    if (playerEntity.getServer() != null) {
+                        EnchantmentHelper.onTargetDamaged(playerEntity.getServer().getWorld(playerEntity.getWorld().getRegistryKey()), (LivingEntity) target, target.getDamageSources().playerAttack(playerEntity), playerEntity.getOffHandStack());
+                    }
                 }
 
                 ItemStack itemStack2 = playerEntity.getOffHandStack();
