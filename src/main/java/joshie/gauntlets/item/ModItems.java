@@ -19,8 +19,7 @@ public class ModItems {
     public static final Item DIAMOND_GAUNTLET = registerItem("diamond_gauntlet",
             new GauntletItem(ToolMaterials.DIAMOND, -1.7F, new Item.Settings().maxDamage(920).attributeModifiers(GauntletItem.createAttributeModifiers(ToolMaterials.DIAMOND, 0, -1.7F))));
     public static final Item NETHERITE_GAUNTLET = registerItem("netherite_gauntlet",
-            new GauntletItem(ToolMaterials.NETHERITE, -1.6F, new Item.Settings().maxDamage(1140).attributeModifiers(GauntletItem.createAttributeModifiers(ToolMaterials.NETHERITE, 0, -1.6F))));
-    public static final Item TEST_ITEM = registerItem("test_item", new AxeItem(ToolMaterials.DIAMOND, new Item.Settings().maxDamage(100)));
+            new GauntletItem(ToolMaterials.NETHERITE, -1.6F, new Item.Settings().maxDamage(1140).fireproof().attributeModifiers(GauntletItem.createAttributeModifiers(ToolMaterials.NETHERITE, 0, -1.6F))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Gauntlets.MOD_ID, name), item);

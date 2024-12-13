@@ -3,13 +3,13 @@
 	"id": "gauntlets",
 	"version": "${version}",
 	"name": "Gauntlets",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Pack double the punch with gauntlets: A new weapon type",
 	"authors": [
-		"Me!"
+		"joshieman"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://joshie.app/",
+		"sources": "https://github.com/joshieman06/gauntlets"
 	},
 	"license": "ARR",
 	"icon": "assets/gauntlets/icon.png",

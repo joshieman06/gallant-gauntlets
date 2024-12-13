@@ -10,6 +10,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.Hand;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.enchantment.effect.entity.PlaySoundEnchantmentEffect;
 
@@ -27,9 +28,14 @@ public record CrushEnchantmentEntityEffect(EnchantmentLevelBasedValue amount)imp
         Iterable<ItemStack> armorItems = ((LivingEntity)user).getArmorItems();
         for (ItemStack armorItem : armorItems) {
             if (!armorItem.isEmpty()) {
-                int damageAmount = (int) (amount.getValue(level)); // Customize as needed
-                assert context.owner() != null;
-                armorItem.damage(damageAmount, context.owner(), EquipmentSlot.MAINHAND);
+                if (context.stack() == context.owner().getStackInHand(Hand.MAIN_HAND)) {
+                    int damageAmount = (int) (amount.getValue(level)); // Customize as needed
+                    assert context.owner() != null;
+                    armorItem.damage(damageAmount, context.owner(), EquipmentSlot.MAINHAND);
+                } else {
+
+                }
+
             }
         }
     }
